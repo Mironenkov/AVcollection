@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+
+	 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="./style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<title>AV collection</title>
+
+	
+</head>
+<body>
+	<div id="container-fluid">
+		
+			<header>
+				
+				<div class="col-lg-4 col-md-4">
+							<ul id = "language">
+								<li><a href="#">ENG</a></li>
+								<li>/</li>
+								<li><a href="#">RU</a></li>
+							</ul>
+				</div>
+				<div class="col-lg-8 col-md-8 head_line_tools">	
+					<form class = "search_form">
+						<input type="text" name="search" placeholder="ПОИСК" >
+						<button type="button" class="search" ></button>
+					</form>
+				
+					<ul id = "tools">
+						<li><button type="button" id="basket"></button></li>
+						<li><button type="button" id="like"></button></li>
+						<li><button type="button" id="lock"></button></li>
+					</ul>
+					<a href="#" id="btn_shops">магазины в спб</a>
+				</div>
+				
+			</header>
+<div class="row-wrapp">
+			<div class="col-lg-3 col-md-3">
+				<div class="left_sidebar">
+					<a href="http://test.pengstud.com/voloshkova/index.html" id="logo"><img src="./images/logo.png" alt="logo"></a>
+					<div id="slogan">"Шедевры моды, национальный колорит, истинный шик"</div>
+					<div id="filter">
+					<span>ФИЛЬТР ТОВАРОВ</span>
+					<p>
+					  <label for="amount">Цена от</label>
+					  <input type="text" id="amount" readonly style="border:0; color:#666666; font-weight:bold;">
+					</p>
+					 
+					<div id="slider-range"></div>
+				</div>
+					<section>
+						<div class="colors">
+							<span>Выберите цвет</span>
+							<input type="checkbox" id="black" name="bl_color" value="black">
+							<label for="black">Черный</label>
+							<input type="checkbox" id="brown" name="br_color" value="brown">
+							<label for="brown">Коричневый</label>
+							<input type="checkbox" id="grey" name="gr_color" value="grey">
+							<label for="grey">Серый</label>
+							<input type="checkbox" id="green" name="gr_color" value="green">
+							<label for="green">Зеленый</label>
+							<input type="checkbox" id="l_blue" name="l_b_color" value="black">
+							<label for="l_blue">Темно-синий</label>
+							<input type="checkbox" id="blue" name="blu_color" value="black">
+							<label for="blue">Синий</label>
+							<input type="checkbox" id="Multy" name="ml_color" value="Multy">
+							<label for="Multy">Мультиколор</label>
+							<input type="checkbox" id="beige" name="bage_color" value="beige">
+							<label for="beige">Бежевый</label>
+							<input type="checkbox" id="silver" name="s_color" value="silver">
+							<label for="silver">Серебристый</label>
+							<input type="checkbox" id="beige_br" name="beige_br_color" value="beige_br">
+							<label for="beige_br">Бежево-коричневый</label>
+							<input type="checkbox" id="silver_viol" name="silver_viol_color" value="silver_viol">
+							<label for="silver_viol">Серо-фиолетовый</label>
+							<input type="checkbox" id="beige_silv" name="beige_silv_color" value="beige_silv">
+							<label for="beige_silv">Бежево-серый</label>
+							<input type="checkbox" id="viol" name="viol_color" value="viol">
+							<label for="viol">Фиолетовый</label>
+						</div>
+					</section>
+					<a href="#" class="more" id="more">ПРИМЕНИТЬ</a>
+					<div class="dropdown">
+						<span>КАТЕГОРИИ</span>
+						<button class="dropdown-toggle" type="button" data-toggle="dropdown" id="drop">&or;</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Каталог товаров</a></li>
+							<li><a href="#">Индивидуальный пошив</a></li>
+							<li><a href="#">Оптовикам</a></li>
+							<li><a href="#">Наши магазины</a></li>
+							<li><a href="#">О бренде</a></li>
+						</ul>
+					</div>
+					<div id="inform">
+						<span>ИНФОРМАЦИЯ</span>
+						<ul>
+							<li><a href="#">О компании "Anna Voloshko"</a></li>
+							<li><a href="#">Информация о доставке</a></li>
+							<li><a href="#">Индивидуальный пошив</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Связатся с нами</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+					</div>
+					<div id="leader">
+						<span>ЛИДЕР ПРОДАЖ</span>
+						<img src="./mediafiles/leader.jpg" alt="" class="leader_image">
+					</div>
+					<div id="cost">
+							Меховой палантин
+							<span>14000.00 р</span>
+							<a href="#" class="more"><img src="./images/cost.png"><span>КУПИТЬ</span></a>
+					</div>
+					<ul id="other">
+					<li><a href="">АКЦИИ</a></li>
+					<li><a href="">ОТЗЫВЫ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 price_item">
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-4 col-md-4 block-item">
+					<img class="img-responsive" src="./mediafiles/leader.jpg" alt="">
+					<h3>Меховой палантин</h3>
+					<p>14000.00 р</p>
+					<span><a href="#">Купить</a></span>
+				</div>
+				<div class="col-lg-12 col-md-12 nav-pages">
+					<ol>
+						<li><a href="#">&laquo;Предыдущая</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">Следующая&raquo;</a></li>
+					</ol>
+				</div>
+			</div>
+</div>
+	<footer>
+	<div class="col-lg-9 col-md-9">
+			<div class="foot_menu">
+				<ul id="additionally">
+					<span>ДОПОЛНИТЕЛЬНО</span>
+					<li><a href="">Поставщикам</a></li>
+					<li><a href="">Оптовикам</a></li>
+				</ul>
+			</div>
+			<div class="foot_menu">
+				<ul id="partners">
+					<span>ПАРТНЕРАМ</span>
+					<li><a href="">Бонусная программа</a></li>
+					<li><a href="">Календарь распродаж</a></li>
+					<li><a href="">Акции и скидки</a></li>
+				</ul>
+			</div>
+			<div class="foot_menu">
+				<ul id="service">
+					<span>СЕРВИС</span>
+					<li><a href="">Как оформить заказ</a></li>
+					<li><a href="">Оплата и доставка</a></li>
+					<li><a href="">Возврат и обмен</a></li>
+					<li><a href="">Гарантия качества</a></li>
+					<li><a href="">Написать письмо</a></li>
+					<li><a href="">Заказать звонок</a></li>
+				</ul>
+			</div>
+			<div class="foot_menu">
+				<ul id="info">
+					<span>ИНФОРМАЦИЯ</span>
+					<li><a href="">О компании</a></li>
+					<li><a href="">Розничные магазины</a></li>
+					<li><a href="">Дипломы</a></li>
+					<li><a href="">Декларации</a></li>
+					<li><a href="">Контакты</a></li>
+					<li><a href="">Отзывы</a></li>
+				</ul>
+			</div>	
+		</div>
+		<div class="col-lg-3 col-md-3">
+			<div id="mail">
+				<div id="follow">
+					<span>Подписка на акции</span></br>
+					Подпишитесь, чтоб получать 
+					регулярные обновления от</br>
+ 					«Anna Voloshko»
+				</div>
+				<form id="follow_box">
+					<input type="text" placeholder="Введите свой E-mail">
+					<a href="#" id="follow_email">ПОДПИСАТЬСЯ</a>
+				</form>
+			</div>
+		</div>
+		</footer>
+	</div>
+	<script src="./js/jquery-1.10.2.min.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/common.js"></script>
+</body>
+</html>
